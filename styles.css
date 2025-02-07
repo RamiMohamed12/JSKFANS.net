@@ -78,6 +78,7 @@ body {
     display: none;
     border-radius: 8px;
     overflow: hidden;
+    border: 2px solid var(--primary-color); /* Green border for a clean look */
 }
 
 .menu-dropdown ul {
@@ -101,6 +102,7 @@ body {
 
 .menu-dropdown li a:hover {
     color: var(--text-light);
+    background: rgba(0, 128, 0, 0.3); /* Soft green hover */
 }
 
 /* Show dropdown when checkbox is checked */
