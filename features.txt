@@ -1,0 +1,7 @@
+1-button to the blog inside the slide show
+2-news letter (for later) 
+3-formus 
+4-add the french and tamazigh 
+5-youtube api doesn't work
+6-hamburger menu(ghdwa)
+7-fixtures(ghdwa) 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Kabylie - Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function updateTitle(event) {
+            let title = event.target.title;
+            document.getElementById("song-title").innerText = title;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logojsk.png" alt="JSK Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href ="index3.html" > Home </a> </li> 
+                    <li><a href="https://digiticket.dz/" target="_blank"> Tickets</a></li>
+                    <li><a href="music.html"> Music</a></li>
+                    <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank"> Merch</a></li>
+                    <li><a href="results.html">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <main style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; height: 100vh; padding-top: 50px;">
+    <h2 id="song-title">Now Playing: <span id="current-title">Loading...</span></h2>
+    <div class="playlist-container">
+        <iframe id="music-player" width="800" height="450" 
+            src="https://www.youtube.com/embed/videoseries?list=PL3iuJf67Jw8DQjXVU8NJXGEaCGgQPSA8y" 
+            title="JS Kabylie Playlist" 
+            frameborder="0" allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</main>
+ 
+    <footer>
+        <p>© 2024 JS Kabylie Faithful • Pride of Algerian Football • <span class="gold-text">#LionsOfKabylie</p>
+    </footer>
+
+<script src="scriptapi.js"> </script>
+
+</body>
+</html>
+
