@@ -29,89 +29,95 @@ body {
     height: 50px;
 }
 
-.navbar nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-.navbar nav ul li {
+.nav-links li {
     margin: 0 1em;
 }
 
-.navbar nav ul li a {
+.nav-links li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.navbar nav ul li a:hover {
-    color: white;
+.nav-links li a:hover {
+    color: var(--text-light);
 }
 
-.navbar-mobile { 
- 
-    display: none; 
-} 
-
-header {
+/* Hamburger Menu */
+.hamburger-menu {
     position: relative;
+    display: none;
 }
 
-.checkbtn {
-    display: none;
+.menu-icon {
+    font-size: 2em;
     cursor: pointer;
+    color: var(--secondary-color);
 }
 
-.navbar-mobile {
+#menu-toggle {
     display: none;
-    background-color: var(--dark-bg);
 }
 
-#check:checked ~ .navbar-mobile {
+/* Dropdown menu */
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--transparent-bg);
+    backdrop-filter: blur(8px);
+    width: 200px;
+    display: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown li {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-dropdown li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
     display: block;
-} 
-
-.navbar-mobile a { 
-    color: green; 
-    padding: 1rem 1.5rem; 
-    display:block; 
-} 
-
-@media only screen and (max-width:992px) {
-    
-    .checkbtn { 
-        
-        display: block; 
-        
-        font-size: 5rem; 
-        
-        position: absolute; 
-        
-        top:30px; 
-      
-        left:40px; 
-    } 
-    
-    .navbar-mobile{ 
-      
-        top:160px;
-    
-        width:100%; 
-    
-    } 
-    
-    .navbar-mobile a { 
-    
-        font-size: 2rem; 
-    
-         padding: 2rem 3rem;
-   
-    }
-
+    transition: 0.3s;
 }
+
+.menu-dropdown li a:hover {
+    color: var(--text-light);
+}
+
+/* Show dropdown when checkbox is checked */
+#menu-toggle:checked + .menu-icon + .menu-dropdown {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
 
 /* Slideshow */
 .slideshow-container {

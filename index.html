@@ -9,16 +9,14 @@
 </head>
 <body>
 
-    <!-- Navbar -->
+     <!-- Navbar -->
     <header>
-        <input type="checkbox" id="check" style="display: none;">
-        <label for="check" class="checkbtn">☰</label>
         <div class="navbar">
             <div class="logo">
                 <img src="logojsk.png" alt="JSK Logo">
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="index.html" target="_blank">Home</a></li>
                     <li><a href="https://digiticket.dz/" target="_blank">Tickets</a></li>
                     <li><a href="music.html">Music</a></li>
@@ -26,16 +24,20 @@
                     <li><a href="results.html">Games</a></li>
                 </ul>
             </nav>
-        </div>
-        <!-- Mobile Navigation -->
-        <div class="navbar-mobile">
-            <ul>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="https://digiticket.dz/" target="_blank">Tickets</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank">Merch</a></li>
-                <li><a href="results.html">Games</a></li>
-            </ul>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="https://digiticket.dz/" target="_blank">Tickets</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank">Merch</a></li>
+                        <li><a href="results.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
