@@ -67,17 +67,17 @@ body {
     display: none;
 }
 
-/* Dropdown menu */
+
 .menu-dropdown {
     position: absolute;
     top: 100%;
     right: 0;
-    backdrop-filter: blur(8px);
+    background: var(--primary-color); /* Solid green background */
     width: 200px;
     display: none;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid var(--primary-color); /* Green border for a clean look */
+    border: 2px solid var(--secondary-color); /* Yellow border */
 }
 
 .menu-dropdown ul {
@@ -92,7 +92,7 @@ body {
 }
 
 .menu-dropdown li a {
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Yellow text */
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -100,8 +100,8 @@ body {
 }
 
 .menu-dropdown li a:hover {
-    color: var(--text-light);
-    background: rgba(0, 128, 0, 0.3); /* Soft green hover */
+    color: var(--dark-bg); /* Dark green text on hover */
+    background: var(--secondary-color); /* Yellow background on hover */
 }
 
 /* Show dropdown when checkbox is checked */

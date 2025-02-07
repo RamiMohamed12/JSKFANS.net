@@ -14,23 +14,41 @@
     </script>
 </head>
 <body>
+    
+         <!-- Navbar -->
     <header>
         <div class="navbar">
             <div class="logo">
                 <img src="logojsk.png" alt="JSK Logo">
             </div>
             <nav>
-                <ul>
-                    <li> <a href ="index.html" > Home </a> </li> 
-                    <li><a href="https://digiticket.dz/" target="_blank"> Tickets</a></li>
-                    <li><a href="music.html"> Music</a></li>
-                    <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank"> Merch</a></li>
+                <ul class="nav-links">
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="https://digiticket.dz/" target="_blank">Tickets</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank">Merch</a></li>
                     <li><a href="results.html">Games</a></li>
                 </ul>
             </nav>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">☰</label>
+                <div class="menu-dropdown">
+                    <ul>
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="https://digiticket.dz/" target="_blank">Tickets</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="https://www.kappa.fr/collections/js-kabylie" target="_blank">Merch</a></li>
+                        <li><a href="results.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
- <main style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; height: 100vh; padding-top: 50px;">
+
+
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; height: 100vh; padding-top: 50px;">
     <h2 id="song-title">Now Playing: <span id="current-title">Loading...</span></h2>
     <div class="playlist-container">
         <iframe id="music-player" width="800" height="450" 
