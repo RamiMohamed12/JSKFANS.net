@@ -73,6 +73,7 @@ body {
     right: 0;
     background: #022D10; /* Solid green background */
     width: 200px;
+    border-radius: 4px;
     display: none;
     overflow: hidden;
     border: 1px solid var(--secondary-color); 
