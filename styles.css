@@ -72,7 +72,7 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background: var(--dark-bg); /* Solid green background */
+    background: #022D10; /* Solid green background */
     width: 200px;
     display: none;
     border-radius: 8px;
