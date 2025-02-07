@@ -75,6 +75,7 @@ body {
     width: 200px;
     display: none;
     overflow: hidden;
+    border: 1px solid var(--secondary-color); 
 }
 
 .menu-dropdown ul {
