@@ -60,6 +60,7 @@ body {
 .menu-icon {
     font-size: 2em;
     cursor: pointer;
+    color: var(--secondary-color);
 }
 
 #menu-toggle {
