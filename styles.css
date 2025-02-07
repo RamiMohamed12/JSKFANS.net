@@ -60,7 +60,6 @@ body {
 .menu-icon {
     font-size: 2em;
     cursor: pointer;
-    color: var(--secondary-color);
 }
 
 #menu-toggle {
@@ -75,7 +74,6 @@ body {
     background: #022D10; /* Solid green background */
     width: 200px;
     display: none;
-    border-radius: 8px;
     overflow: hidden;
 }
 
