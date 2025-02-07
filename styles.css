@@ -77,7 +77,6 @@ body {
     display: none;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid var(--secondary-color); /* Yellow border */
 }
 
 .menu-dropdown ul {
