@@ -461,7 +461,19 @@ a {
     margin-left: 0px;
   }
 
+.fans-image {
+    max-width: 100%;  /* Ensures the image scales down */
+    height: auto;      /* Maintains aspect ratio */
+    display: block;    /* Centers image */
+    margin: 0 auto;
+}
 
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .fans-section img {
+        width: 90%; /* Adjust the width to fit smaller screens */
+    }
+}
 
 
 
